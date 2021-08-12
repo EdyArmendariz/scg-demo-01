@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2>Marketing Campain Code Generator</h2>
+  <p>Select a Tab to View a different GUI Layout</p>
+</div>
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openTab('asis')">As-Is Source Code Compiler</button>
+  <button class="w3-bar-item w3-button" onclick="openTab('tobe')">To-Be Marketing Code Generator</button>
+  <button class="w3-bar-item w3-button" onclick="openTab('scratchpad')">Scratch Pad GUI</button>
+</div>
+
+<div id="asis" class="w3-container tabwindow">
+  <h2>Source Code Compiler</h2>
+  <p>Placeholder for Source Code Compiler</p>
+</div>
+
+<div id="tobe" class="w3-container tabwindow" style="display:none">
+  <h2>Marketing Code Generator</h2>
+  <p>Placeholder for Marketing Code Generator</p> 
+</div>
+
+<div id="scratchpad" class="w3-container tabwindow" style="display:none">
+  <h2>Scratch Pad GUI</h2>
+  <p>Placeholder for new GUI components</p>
+</div>
+
+<script>
+function openTab(tabName) {
+  var i;
+  var x = document.getElementsByClassName("tabwindow");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(tabName).style.display = "block";  
+}
+</script>
+
+</body>
+</html>
